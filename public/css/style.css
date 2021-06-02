@@ -1,0 +1,27 @@
+.main-img {
+    background: url("/img/main-img.png") no-repeat center;
+    background-size: cover;
+    opacity: 0.5;
+}
+.banner img {
+    width: 100%;
+    opacity: 0.5;
+}
+.yellow-line {
+    border-bottom: 3px solid #ECCD33;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
