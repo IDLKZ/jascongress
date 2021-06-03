@@ -1,3 +1,8 @@
+body{
+    background: #F6F9FD!important;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .main-img {
     background: url("/img/main-img.png") no-repeat center;
     background-size: cover;
@@ -11,17 +16,72 @@
     border-bottom: 3px solid #ECCD33;
 }
 
+.project-container{
+    overflow-x: hidden;
+}
+.project-background{
+    min-height: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.project-thumb{
+    min-height: 100px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 5px 8px -5px rgba(34, 60, 80, 0.6);
+    -moz-box-shadow: 0px 5px 8px -5px rgba(34, 60, 80, 0.6);
+    box-shadow: 0px 5px 8px -5px rgba(34, 60, 80, 0.6);
+}
+.active-project-thumb{
+    color:white;
+    background: #009AD2;
+}
 
 
+.my-bg-white{
+    background-color: #FFFFFF;
+}
 
+.my-btn{
+    background-color: #009AD2!important;
+    color: white!important;
+    border-radius: 5px!important;
+}
+.main-color{
+    color: #009AD2!important;
+}
+.my-footer{
+    background: #222222!important;
+}
+.a-btn{
+    -webkit-box-shadow: 0px 0px 44px -10px rgba(34, 60, 80, 0.6);
+    -moz-box-shadow: 0px 0px 44px -10px rgba(34, 60, 80, 0.6);
+    box-shadow: 0px 0px 44px -10px rgba(34, 60, 80, 0.6);
+}
+@media screen and (max-width: 768px) {
+    .bg-image{
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),  url("/img/main-img.png");
+        background-size: cover;
+        background-position: center;
+    }
+}
+@media screen and (min-width: 768px) {
+    .project-thumb:hover{
+        color:white;
+        background: #009AD2;
+    }
+    .project-thumb:hover p{
+        color:white;
+    }
 
+    .mySwiper .swiper-slide-active{
+        color:white;
+        background: #009AD2!important;
+    }
 
-
-
-
-
-
-
-
+    .mySwiper .swiper-slide-active p{
+        color:white;
+    }
+}
 
 

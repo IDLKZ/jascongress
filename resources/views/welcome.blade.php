@@ -12,13 +12,13 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800%7CPlayfair+Display:400,700%7CRoboto:100,300,400,400i,500,700">
 
     <script src="https://use.fontawesome.com/62b3f3a22e.js"></script>
-
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
-    <link rel="stylesheet" href="{{asset('css/mibreitGallery.css')}}">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
 
 </head>
@@ -59,7 +59,7 @@
             <div class="col-12">
                 <nav class="navbar navbar-expand-lg navbar-light rounded">
                     <a class="navbar-brand logo-2" href="index.html">
-                        <img src="img/logos/black-logo.png" alt="logo">
+                        <img src="img/logos/logo.png" alt="logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
                             aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,33 +67,33 @@
                     </button>
                     <div class="navbar-collapse collapse w-100" id="navbar">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item dropdown active">
-                                <a class="nav-link" href="#">
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link font-weight-bold" href="#">
                                     О конгрессе
                                 </a>
                             </li>
-                            <li class="nav-item dropdown active">
-                                <a class="nav-link" href="#">
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link font-weight-bold" href="#">
                                     Наши проекты
                                 </a>
                             </li>
-                            <li class="nav-item dropdown active">
-                                <a class="nav-link" href="#">
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link font-weight-bold" href="#">
                                     Вступление в конгресс
                                 </a>
                             </li>
-                            <li class="nav-item dropdown active">
-                                <a class="nav-link" href="#">
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link font-weight-bold" href="#">
                                     Наши партнеры
                                 </a>
                             </li>
-                            <li class="nav-item dropdown active">
-                                <a class="nav-link" href="#">
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link font-weight-bold" href="#">
                                     Новости
                                 </a>
                             </li>
-                            <li class="nav-item dropdown active">
-                                <a class="nav-link" href="#">
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link font-weight-bold" href="#">
                                     Контакты
                                 </a>
                             </li>
@@ -112,7 +112,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6 col-lg-6 main-img"></div>
-            <div class="col-md-6 col-lg-6">
+            <div class="col-md-6 col-lg-6 bg-image">
                 <div class="py-5">
                     <div id="typed-strings">
                         <p>КОНГРЕСС МОЛОДЕЖИ КАЗАХСТАНА</p>
@@ -153,101 +153,293 @@
 <!--Slider start-->
 <div class="container my-5">
     <div class="main-title">
-        <h1>НАШИ ПРОЕКТЫ</h1>
+        <h1><span class="main-color">НАШИ</span>  ПРОЕКТЫ</h1>
         <p>Список наших проектов</p>
     </div>
     <div class="row">
+        <div class="col-md-12 project-container">
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper  ">
+                    <div class="swiper-slide my-bg-white">
+                        <div class="project-thumb d-flex justify-content-center align-items-center">
+                            <div class="text-center">
+                                <i class="fas fa-trophy"></i>
+                                <p>Jas Qalam</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide  my-bg-white">
+                        <div class="project-thumb d-flex justify-content-center align-items-center">
+                            <div class="text-center">
+                                <i class="fas fa-trophy"></i>
+                                <p>Жаңа жағдайдағ...</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide my-bg-white">
+                        <div class="project-thumb d-flex justify-content-center align-items-center">
+                            <div class="text-center">
+                                <i class="fas fa-trophy"></i>
+                                <p>Jascongress university</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide my-bg-white">
+                        <div class="project-thumb d-flex justify-content-center align-items-center">
+                            <div class="text-center">
+                                <i class="fas fa-trophy"></i>
+                                <p>Дни КМК</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide my-bg-white">
+                        <div class="project-thumb d-flex justify-content-center align-items-center">
+                            <div class="text-center">
+                                <i class="fas fa-trophy"></i>
+                                <p>Qazaqsha Tour 2020</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide my-bg-white">
+                        <div class="project-thumb d-flex justify-content-center align-items-center">
+                            <div class="text-center">
+                                <i class="fas fa-trophy"></i>
+                                <p>Jas Qalam2</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
         <!-- Slider main container -->
         <!-- Swiper -->
-{{--        Slider Content--}}
-        <div
-            style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
-            class="swiper-container mySwiper2"
-        >
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
-                </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-{{--        Slider Content--}}
-        <div thumbsSlider="" class="swiper-container mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
-                </div>
-            </div>
-        </div>
+        <div class="col-md-12 ">
+            <div class="swiper-container mySwiperProject">
+                <div class="swiper-wrapper py-4">
+                    <div class="swiper-slide py-5">
+                        <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-md-6 project-background" style="background-image: url('/img/1.jpg')"></div>
+                            <div class="col-md-6">
+                                <div class="main-title text-left">
+                                    <h1>ПРОЕКТ «Jas Qalam»</h1>
+                                </div>
+                                <p>
+                                    Ежегодный проект, который нацелен на развитие молодежной
+                                    журналистики. 4 направления обучения: тележурналистика, печатная журналистика и интернет-блоггинг, PR и личный
+                                </p>
+                                <a href="" class="links">Подробнее</a>
+                            </div>
 
+                        </div>
+                    </div>
+                    <div class="swiper-slide py-5">
+                        <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-md-6 project-background" style="background-image: url('/img/1.jpg')"></div>
+                            <div class="col-md-6">
+                                <div class="main-title text-left">
+                                    <h1>Жаңа жағдайдағ</h1>
+                                </div>
+                                <p>
+                                    Ежегодный проект, который нацелен на развитие молодежной
+                                    журналистики. 4 направления обучения: тележурналистика, печатная журналистика и интернет-блоггинг, PR и личный
+                                </p>
+                                <a href="" class="links">Подробнее</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide py-5">
+                        <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-md-6 project-background" style="background-image: url('/img/1.jpg')"></div>
+                            <div class="col-md-6">
+                                <div class="main-title text-left">
+                                    <h1>Jascongress univer...</h1>
+                                </div>
+                                <p>
+                                    Ежегодный проект, который нацелен на развитие молодежной
+                                    журналистики. 4 направления обучения: тележурналистика, печатная журналистика и интернет-блоггинг, PR и личный
+                                </p>
+                                <a href="" class="links">Подробнее</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide py-5">
+                        <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-md-6 project-background" style="background-image: url('/img/1.jpg')"></div>
+                            <div class="col-md-6">
+                                <div class="main-title text-left">
+                                    <h1>Дни КМК</h1>
+                                </div>
+                                <p>
+                                    Ежегодный проект, который нацелен на развитие молодежной
+                                    журналистики. 4 направления обучения: тележурналистика, печатная журналистика и интернет-блоггинг, PR и личный
+                                </p>
+                                <a href="" class="links">Подробнее</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide py-5">
+                        <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-md-6 project-background" style="background-image: url('/img/1.jpg')"></div>
+                            <div class="col-md-6">
+                                <div class="main-title text-left">
+                                    <h1>Qazaqsha Tour 2020</h1>
+                                </div>
+                                <p>
+                                    Ежегодный проект, который нацелен на развитие молодежной
+                                    журналистики. 4 направления обучения: тележурналистика, печатная журналистика и интернет-блоггинг, PR и личный
+                                </p>
+                                <a href="" class="links">Подробнее</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide py-5">
+                        <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-md-6 project-background" style="background-image: url('/img/1.jpg')"></div>
+                            <div class="col-md-6">
+                                <div class="main-title text-left">
+                                    <h1>ПРОЕКТ «Jas Qalam»6</h1>
+                                </div>
+                                <p>
+                                    Ежегодный проект, который нацелен на развитие молодежной
+                                    журналистики. 4 направления обучения: тележурналистика, печатная журналистика и интернет-блоггинг, PR и личный
+                                </p>
+                                <a href="" class="links">Подробнее</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <!--Slider end-->
+
+{{--Вступление в конгресс--}}
+<div class="blog content-area-2 my-bg-white">
+    <div class="container">
+        <div class="main-title">
+            <h1><span class="main-color">ВСТУПЛЕНИЕ</span> В КОНГРЕСС</h1>
+            <p>Отправляйте заявки</p>
+        </div>
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center align-items-center">
+                <a class="btn-lg my-btn ml-2" href="" data-toggle="modal" data-target="#association">АССОЦИАЦИЯ</a>
+                <a class="btn-lg my-btn ml-2" href="" data-toggle="modal" data-target="#team">КОМАНДА</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{{--Вступление в конгресс--}}
+<div class="blog content-area-2 bg-white">
+    <div class="container">
+        <div class="main-title">
+            <h1><span class="main-color">НАША</span> КОМАНДА</h1>
+        </div>
+        <div class="slick-slider-area">
+            <div class="row slick-carousel wow fadeInUp delay-04s" data-slick='{"slidesToShow": 3,"dots":true, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}'>
+                <div class="slick-slide-item">
+                    <div class="blog-1">
+                        <div class="blog-photo">
+                            <img src="http://placehold.it/350x233" alt="blog-1" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-slide-item">
+                    <div class="blog-1">
+                        <div class="blog-photo">
+                            <img src="http://placehold.it/350x233" alt="blog-1" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-slide-item">
+                    <div class="blog-1">
+                        <div class="blog-photo">
+                            <img src="http://placehold.it/350x233" alt="blog-1" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-slide-item">
+                    <div class="blog-1">
+                        <div class="blog-photo">
+                            <img src="http://placehold.it/350x233" alt="blog-1" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{{--Наши партнеры--}}
+
+<div class="blog content-area-2 my-bg-white">
+    <div class="container">
+        <div class="main-title">
+            <h1><span class="main-color">НАШИ</span> ПАРТНЕРЫ</h1>
+            <p>Отправляйте заявки</p>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="swiper-container swiperPartner">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide text-center">
+                            <img src="/img/partner1.png" height="75px">
+                        </div>
+                        <div class="swiper-slide text-center">
+                            <img src="/img/partner2.png" height="75px">
+                        </div>
+                        <div class="swiper-slide text-center">
+                            <img src="/img/partner3.png" height="75px">
+                        </div>
+                        <div class="swiper-slide text-center">
+                            <img src="/img/partner4.png" height="75px">
+                        </div>
+
+                    </div>
+                    <br>
+                    <!-- If we need pagination -->
+                    <div class="d-none d-sm-block">
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{--Наши партнеры--}}
 
 <!-- Blog start -->
 <div class="blog content-area-2">
     <div class="container">
         <div class="main-title">
-            <h1>Latest Blog</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h1>НОВОСТИ</h1>
         </div>
         <div class="slick-slider-area">
-            <div class="row slick-carousel wow fadeInUp delay-04s" data-slick='{"slidesToShow": 3, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}'>
+            <div class="row slick-carousel wow fadeInUp delay-04s" data-slick='{"slidesToShow": 3,"dots":true, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}'>
                 <div class="slick-slide-item">
                     <div class="blog-1">
                         <div class="blog-photo">
@@ -371,119 +563,75 @@
 <!-- Blog end -->
 
 <!-- Footer start -->
-<footer class="footer">
+<footer class="footer my-footer">
     <div class="container footer-inner">
         <div class="row">
             <div class="col-xl-4 col-lg-3 col-md-6 col-sm-6">
                 <div class="footer-item">
-                    <h4>Contact Us</h4>
+                    <div class="logo-sitebar my-2 py-2">
+                        <img src="img/logos/logo.png" alt="logo">
+                    </div>
                     <ul class="contact-info">
                         <li>
-                            <i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i>20/F Green Road,
-                            Dhanmondi, Dhaka
+                            <i class="fas fa-map"></i>
+                            Республика Казахстана, г. Нур-Султан, пр. Кабанбай батыра 19, блок Е
+                        </li>
+
+                        <li>
+                            <i class="fa fa-phone"></i><a href="tel:+55-417-634-7071">
+                                8 (7172) 51 58 10
+                            </a>
+                            <br>
+                            <small>
+                                с 09.00 до 18.00
+                            </small>
                         </li>
                         <li>
                             <i class="fa fa-envelope"></i><a
-                                href="mailto:sales@hotelempire.com">info@themevessel.com</a>
+                                href="mailto:sales@hotelempire.com">jascongress2002@gmail.com
+                                </a>
                         </li>
                         <li>
-                            <i class="fa fa-phone"></i><a href="tel:+55-417-634-7071">+0477 85X6 552</a>
+                            <i class="fa fa-envelope"></i><a
+                                href="mailto:sales@hotelempire.com">kmk_kaz@list.ru
+                            </a>
                         </li>
-                        <li>
-                            <i class="fa fa-fax"></i>+0487 85X6 224
-                        </li>
-                        <li>
-                            <i class="fa fa-skype"></i><a href="mailto:info@green.com">info@green.com</a>
-                        </li>
+
                     </ul>
                 </div>
             </div>
-            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+            <div class="col-xl-4 col-lg-2 col-md-6 col-sm-6">
                 <div class="footer-item">
                     <h4>
-                        Useful Links
+                        Ссылки
                     </h4>
                     <ul class="links">
                         <li>
-                            <a href="#"><i class="fa fa-angle-right"></i>Home</a>
+                            <a href="#">О конгрессе</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-angle-right"></i>About us</a>
+                            <a href="#">Наши проекты</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-angle-right"></i>Service</a>
+                            <a href="#">Вступление в конгресс</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-angle-right"></i>Contact Us</a>
+                            <a href="#">Наши партнеры</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-angle-right"></i>Properties Grid</a>
+                            <a href="#">Наши партнеры</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-angle-right"></i>Blog Post</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-angle-right"></i>Property Details</a>
+                            <a href="#">Контакты</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                <div class="footer-item recent-posts">
-                    <h4>Recent Properties</h4>
-                    <div class="media mb-4">
-                        <a href="properties-details.html">
-                            <img src="http://placehold.it/60x60" alt="sub-property">
-                        </a>
-                        <div class="media-body align-self-center">
-                            <h5>
-                                <a href="properties-details.html">Beautiful Single Home</a>
-                            </h5>
-                            <p>Feb 27, 2020 | $1045,000</p>
-                        </div>
-                    </div>
-                    <div class="media mb-4">
-                        <a href="properties-details.html">
-                            <img src="http://placehold.it/60x60" alt="sub-property-2">
-                        </a>
-                        <div class="media-body align-self-center">
-                            <h5>
-                                <a href="properties-details.html">Sweet Family Home</a>
-                            </h5>
-                            <p>Mar 14, 2020 | $944,000</p>
-                        </div>
-                    </div>
-                    <div class="media">
-                        <a href="properties-details.html">
-                            <img src="http://placehold.it/60x60" alt="sub-property-3">
-                        </a>
-                        <div class="media-body align-self-center">
-                            <h5>
-                                <a href="properties-details.html">Real Luxury Villa</a>
-                            </h5>
-                            <p>Apr 14, 2020 | $1420,000</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+            <div class="col-xl-4 col-lg-3 col-md-6 col-sm-6">
                 <div class="footer-item clearfix">
-                    <h4>Subscribe</h4>
-                    <div class="Subscribe-box">
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                            mollit.</p>
-                        <form action="#" method="GET">
-                            <p>
-                                <input type="text" class="form-contact" name="email" placeholder="Enter Address">
-                            </p>
-                            <p>
-                                <button type="submit" name="submitNewsletter" class="btn btn-block btn-color">
-                                    Subscribe
-                                </button>
-                            </p>
-                        </form>
-                    </div>
+                    <h4>Карта</h4>
                 </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2503.8280814069894!2d71.42498976575614!3d51.130079079574806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0KDQtdGB0L_Rg9Cx0LvQuNC60LAg0JrQsNC30LDRhdGB0YLQsNC9LCAwMTAwMDAsINCzLiDQndGD0YAt0KHRg9C70YLQsNC9LCDRg9C7LiDQmtGD0L3QsNC10LLQsCwgMTIvMQ!5e0!3m2!1sru!2skz!4v1622720548836!5m2!1sru!2skz" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </div>
@@ -491,8 +639,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-12">
-                    <p class="copy">© 2018 <a href="#">Theme Vessel.</a> Trademarks and brands are the property of
-                        their respective owners.</p>
+                    <p class="copy">© Jascongress. Все права защищены 2020.</p>
                 </div>
                 <div class="col-lg-4 col-md-12">
                     <ul class="social-list clearfix">
@@ -507,168 +654,125 @@
     </div>
 </footer>
 <!-- Footer end -->
-
-<!-- Full Page Search -->
-<div id="full-page-search">
-    <button type="button" class="close">×</button>
-    <form action="#" class="search">
-        <input type="search" value="" placeholder="type keyword(s) here"/>
-        <button type="button" class="btn btn-sm btn-color">Search</button>
-    </form>
-</div>
-
-<!-- Property Video Modal -->
-<div class="modal property-modal fade" id="propertyModal" tabindex="-1" role="dialog"
-     aria-labelledby="propertyModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
+<!-- Modal -->
+<div class="modal fade" id="association" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="propertyModalLabel">
-                    Find Your Dream Properties
-                </h5>
-                <p>
-                    <i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i> 123 Kathal St. Tampa
-                    City,
-                </p>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <div class="row">
-                    <div class="col-lg-6 modal-left">
-                        <div class="modal-left-content">
-                            <div id="modalCarousel" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner" role="listbox">
-                                    <div class="carousel-item active">
-                                        <iframe class="modalIframe" src="https://www.youtube.com/embed/5e0LxrLSzok"
-                                                allowfullscreen></iframe>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="http://placehold.it/400x267" alt="Test ALT">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="http://placehold.it/400x267" alt="Test ALT">
-                                    </div>
-                                </div>
-                                <a class="control control-prev" href="#modalCarousel" role="button"
-                                   data-slide="prev">
-                                    <i class="fa fa-angle-left"></i>
-                                </a>
-                                <a class="control control-next" href="#modalCarousel" role="button"
-                                   data-slide="next">
-                                    <i class="fa fa-angle-right"></i>
-                                </a>
-                            </div>
-                            <div class="description"><h3>Description</h3>
-                                <p>
-                                    Curabitur odio nibh, luctus non pulvinar a, ultricies ac diam. Donec neque
-                                    massa, viverra interdum eros ut, imperdiet pellentesque mauris. Proin sit amet
-                                    scelerisque
-                                    risus. Donec
-                                </p>
-                            </div>
-                        </div>
+                <div class="main-title">
+                    <h1>Ассоциация</h1>
+                    <p>Подписанное заявление необходимо подписать и заверить печатью, отсканировать и отправить на электронный адрес jascongress2002@gmail.com</p>
+                    <div class="my-2 pt-2">
+
+                        <a class="btn-lg a-btn my-2 font-weight-bold">
+                            <i class="fas fa-download main-color"></i>
+                            Скачать
+                        </a>
                     </div>
-                    <div class="col-lg-6 modal-right">
-                        <div class="modal-right-content bg-white">
-                            <strong class="price">
-                                $178,000
-                            </strong>
-                            <section>
-                                <h3>Features</h3>
-                                <ul class="bullets">
-                                    <li><i class="flaticon-bed"></i> Double Bed</li>
-                                    <li><i class="flaticon-swimmer"></i> Swimming Pool</li>
-                                    <li><i class="flaticon-bath"></i> 2 Bathroom</li>
-                                    <li><i class="flaticon-car-repair"></i> Garage</li>
-                                    <li><i class="flaticon-parking"></i> Parking</li>
-                                    <li><i class="flaticon-theatre-masks"></i> Home Theater</li>
-                                    <li><i class="flaticon-old-typical-phone"></i> Telephone</li>
-                                    <li><i class="flaticon-green-park-city-space"></i> Private space</li>
-                                </ul>
-                            </section>
-                            <section>
-                                <h3>Overview</h3>
-                                <dl>
-                                    <dt>Area</dt>
-                                    <dd>2500 Sq Ft:3400</dd>
-                                    <dt>Condition</dt>
-                                    <dd>New</dd>
-                                    <dt>Year</dt>
-                                    <dd>2018</dd>
-                                    <dt>Price</dt>
-                                    <dd>$178,000</dd>
-                                </dl>
-                            </section>
-                            <a href="properties-details.html" class="btn btn-show btn-theme">Show Detail</a>
-                        </div>
-                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="team" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="main-title">
+                    <h1>Команда</h1>
+                    <p>
+                        Высылать резюме на электронный адрес
+                        jascongress2002@gmail.com                    </p>
+
+
+
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Off-canvas sidebar -->
-<div class="off-canvas-sidebar">
-    <div class="off-canvas-sidebar-wrapper">
-        <div class="off-canvas-header">
-            <a class="close-offcanvas" href="#"><span class="fa fa-times"></span></a>
-        </div>
-        <div class="off-canvas-content">
-            <aside class="canvas-widget">
-                <div class="logo-sitebar text-center">
-                    <img src="img/logos/logo.png" alt="logo">
-                </div>
-            </aside>
-            <aside class="canvas-widget">
-                <ul class="menu">
-                    <li class="menu-item menu-item-has-children"><a href="index.html">Home</a></li>
-                    <li class="menu-item"><a href="properties-grid-leftside.html">Properties List</a></li>
-                    <li class="menu-item"><a href="properties-details.html">Property Detail</a></li>
-                    <li class="menu-item"><a href="blog-single-sidebar-right.html">Blog</a></li>
-                    <li class="menu-item"><a href="about.html">About US</a></li>
-                    <li class="menu-item"><a href="contact-3.html">Contact US</a></li>
-                </ul>
-            </aside>
-            <aside class="canvas-widget">
-                <ul class="social-icons">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa fa-vk"></i></a></li>
-                </ul>
-            </aside>
-        </div>
-    </div>
-</div>
 
 <!-- External JS libraries -->
 
 <script src="{{asset('js/app.js')}}"></script>
-<script src="{{asset('js/mibreitGallery.min.js')}}"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
     var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 10,
-        slidesPerView: 5,
+        loop:true,
         freeMode: true,
-        watchSlidesVisibility: true,
-        watchSlidesProgress: true,
+        slideToClickedSlide:true,
+        simulateTouch:false,
+        allowTouchMove:false,
+
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 5,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                },
+            },
+            1024: {
+                slidesPerView: 5,
+                spaceBetween: 2,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            },
+        }
     });
-    var swiper2 = new Swiper(".mySwiper2", {
+    var swiper_project = new Swiper(".mySwiperProject", {
         spaceBetween: 10,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        thumbs: {
-            swiper: swiper,
-        },
+        slidesPerView: 1,
+        freeMode: false,
+        simulateTouch:false,
+        allowTouchMove:false,
     });
+
+    swiper.on("click",function (el) {
+        swiper.slideTo(el.clickedIndex,1200);
+        swiper_project.slideTo(el.realIndex,1200);
+    })
+    swiper.on('slideChange', function (el) {
+        swiper_project.slideTo(el.realIndex,1200);
+    });
+
+    var swiper_partner = new Swiper(".swiperPartner",{
+
+        freeMode: false,
+        slideToClickedSlide:true,
+        centerMode:true,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 2,
+            },
+        }
+    })
+
 
 </script>
 </body>
