@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\FrontController;
 use Illuminate\Support\Facades\Route;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -12,11 +15,26 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::group(
+    [
+        'prefix' => LaravelLocalization::setLocale(),
+        'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
+    ], function(){
 
-Route::get('/', function () {
-    return view('welcome');
+    Route::get('/', [FrontController::class, 'index'])->name('main');
+    Route::get('/single-post/{id}', [FrontController::class, 'single'])->name('single');
+
+});
+Auth::routes(['register' => false]);
+Route::group(['middleware' => 'auth', 'prefix' => 'admin'], function () {
+    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::resource('banners', App\Http\Controllers\BannerController::class);
+    Route::resource('teams', App\Http\Controllers\TeamController::class);
+    Route::resource('blogs', App\Http\Controllers\BlogController::class);
+    Route::resource('settings', App\Http\Controllers\SettingController::class);
 });
 
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+

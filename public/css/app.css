@@ -1,4 +1,4 @@
-/*!
+.main-header .navbar-expand-lg .navbar-nav .nav-link/*!
  * Bootstrap v4.0.0-beta.2 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
  * Copyright 2011-2017 Twitter, Inc.
@@ -18825,7 +18825,7 @@ a:hover {
 p {
     font-size: 15px;
     line-height: 26px;
-    color: #535353;
+    color: rgba(172, 172, 172, 1);
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -19781,9 +19781,9 @@ input[type=checkbox]:checked + label:before {
 }
 
 .main-header .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 35px 17px 34px;
-    font-size: 15px;
-    font-weight: 400;
+    /*padding: 35px 17px 34px;*/
+    font-size: 13px;
+    font-weight: 600;
     letter-spacing: 0.5px;
 }
 
@@ -19924,8 +19924,9 @@ a {
 /** BANNER **/
 #banner {
     position: relative;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #028BC2 51.56%);
-
+    /*background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #028BC2 51.56%);*/
+    background: url("/img/jk-congress.png") no-repeat;
+    background-size: cover;
 }
 
 .banner {
