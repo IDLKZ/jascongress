@@ -1,4 +1,7 @@
 @extends('layout')
+@push('styles')
+    <link rel="stylesheet" href="{{asset('css/tabs.css')}}">
+@endpush
 @section('content')
 
     <!-- Banner start -->
@@ -37,194 +40,210 @@
     <!--Slider start-->
     <div id="projects" class="container my-5">
         <div class="main-title">
-            <h1><span class="main-color">НАШИ</span>  ПРОЕКТЫ</h1>
-            <p>Список наших проектов</p>
+            <h1>{!! __('front.our_pr') !!}</h1>
+            <p>{{__('front.our_list_pr')}}</p>
         </div>
-        <div class="row">
-            <div class="col-md-12 project-container">
-                <div class="swiper-container mySwiper">
-                    <div class="swiper-wrapper  ">
-                        <div class="swiper-slide my-bg-white">
-                            <div class="project-thumb d-flex justify-content-center align-items-center">
-                                <div class="text-center">
-                                    <i class="fas fa-trophy"></i>
-                                    <p>Jas Qalam</p>
-                                </div>
+        <div class="row justify-content-center">
+            <div class="tab">
 
-                            </div>
-                        </div>
-                        <div class="swiper-slide  my-bg-white">
-                            <div class="project-thumb d-flex justify-content-center align-items-center">
-                                <div class="text-center">
-                                    <i class="fas fa-trophy"></i>
-                                    <p>Жаңа жағдайдағ...</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide my-bg-white">
-                            <div class="project-thumb d-flex justify-content-center align-items-center">
-                                <div class="text-center">
-                                    <i class="fas fa-trophy"></i>
-                                    <p>Jascongress university</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide my-bg-white">
-                            <div class="project-thumb d-flex justify-content-center align-items-center">
-                                <div class="text-center">
-                                    <i class="fas fa-trophy"></i>
-                                    <p>Дни КМК</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide my-bg-white">
-                            <div class="project-thumb d-flex justify-content-center align-items-center">
-                                <div class="text-center">
-                                    <i class="fas fa-trophy"></i>
-                                    <p>Qazaqsha Tour 2020</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide my-bg-white">
-                            <div class="project-thumb d-flex justify-content-center align-items-center">
-                                <div class="text-center">
-                                    <i class="fas fa-trophy"></i>
-                                    <p>Jas Qalam2</p>
-                                </div>
-
-                            </div>
-                        </div>
-
-
+                <!-- Tabs -->
+                <div class="tab__button">
+                    <div class="slider">
+                        <ul class="list">
+                            <li class="js-tab-trigger item is-current" data-tab-list="tabGroup1" data-tab-info="tab01">
+                                <button class="button" type="button">
+                                    <i class="fa fa-trophy"></i>
+                                    <div>
+                                        Jas Qalam
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="js-tab-trigger item" data-tab-list="tabGroup1" data-tab-info="tab02">
+                                <button class="button" type="button">
+                                    <i class="fa fa-trophy"></i>
+                                    <div>
+                                        Жаңа жағдайдағы
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="js-tab-trigger item" data-tab-list="tabGroup1" data-tab-info="tab03">
+                                <button class="button" type="button">
+                                    <i class="fa fa-trophy"></i>
+                                    <div>
+                                        Jascongress univercity
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="js-tab-trigger item" data-tab-list="tabGroup1" data-tab-info="tab04">
+                                <button class="button" type="button">
+                                    <i class="fa fa-trophy"></i>
+                                    <div>
+                                        Дни КМК
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="js-tab-trigger item" data-tab-list="tabGroup1" data-tab-info="tab05">
+                                <button class="button" type="button">
+                                    <i class="fa fa-trophy"></i>
+                                    <div>
+                                        Qazaqsha Tour 2020
+                                    </div>
+                                </button>
+                            </li>
+                        </ul>
                     </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+
+                    <a href="#" class="slider-arrow sa-left">&lt;</a>
+                    <a href="#" class="slider-arrow sa-right">&gt;</a>
+
                 </div>
-            </div>
-            <!-- Slider main container -->
-            <!-- Swiper -->
-            <div class="col-md-12 ">
-                <div class="swiper-container mySwiperProject">
-                    <div class="swiper-wrapper py-4">
-                        <div class="swiper-slide py-5">
-                            <div class="row d-flex justify-content-center align-items-center">
-                                <div class="col-md-6 project-background">
-                                    <img src="/img/1.jpg" alt="">
+
+                <!-- Tab Content -->
+                <div class="tab__content">
+                    <div class="js-tab-content content is-current" data-tab-list="tabGroup1" data-tab-info="tab01">
+
+                        <div class="box">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6">
+                                    <div class="imageWrap"><img class="image" src="/img/1.jpg" alt="image alt"></div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="main-title text-left">
-                                        <h1><span class="main-color">ПРОЕКТ</span> «Jas Qalam»</h1>
-                                    </div>
-                                    <p>
+                                <div class="col-md-6 col-lg-6">
+                                    <h1><span class="main-color">ПРОЕКТ</span>  JasQalam</h1>
+                                        <p class="text">
+                                            Ежегодный проект, который нацелен на развитие молодежной
+                                            журналистики. 4 направления обучения: тележурналистика, печатная журналистика и интернет-блоггинг, PR и личный
+                                        </p>
+                                    <a data-toggle="collapse" id="btn" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        Подробнее
+                                    </a>
+                                        <div class="collapse" id="collapseExample">
+                                            <div class="card-body pt-0 pl-0">
+                                                <p>Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.</p>
+                                                <a data-toggle="collapse" id="btn2" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                    Закрыть
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="js-tab-content content" style="display: none;" data-tab-list="tabGroup1" data-tab-info="tab02">
+
+                        <div class="box">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6">
+                                    <div class="imageWrap"><img class="image" src="/img/1.jpg" alt="image alt"></div>
+                                </div>
+                                <div class="col-md-6 col-lg-6">
+                                    <h1><span class="main-color">ПРОЕКТ</span>  JasQalam2</h1>
+                                    <p class="text">
                                         Ежегодный проект, который нацелен на развитие молодежной
                                         журналистики. 4 направления обучения: тележурналистика, печатная журналистика и интернет-блоггинг, PR и личный
                                     </p>
-                                    <a href="" class="links">Подробнее</a>
+                                    <a data-toggle="collapse" id="btn" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        Подробнее
+                                    </a>
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="card-body pt-0 pl-0">
+                                            <p>Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.</p>
+                                            <a data-toggle="collapse" id="btn2" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                Закрыть
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
-
                             </div>
                         </div>
-                        <div class="swiper-slide py-5">
-                            <div class="row d-flex justify-content-center align-items-center">
-                                <div class="col-md-6 project-background">
-                                    <img src="/img/1.jpg" alt="">
+                    </div>
+                    <div class="js-tab-content content" style="display: none;" data-tab-list="tabGroup1" data-tab-info="tab03">
+
+                        <div class="box">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6">
+                                    <div class="imageWrap"><img class="image" src="/img/1.jpg" alt="image alt"></div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="main-title text-left">
-                                        <h1>Жаңа жағдайдағ</h1>
-                                    </div>
-                                    <p>
+                                <div class="col-md-6 col-lg-6">
+                                    <h1><span class="main-color">ПРОЕКТ</span>  JasQalam3</h1>
+                                    <p class="text">
                                         Ежегодный проект, который нацелен на развитие молодежной
                                         журналистики. 4 направления обучения: тележурналистика, печатная журналистика и интернет-блоггинг, PR и личный
                                     </p>
-                                    <a href="" class="links">Подробнее</a>
+                                    <a data-toggle="collapse" id="btn" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        Подробнее
+                                    </a>
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="card-body pt-0 pl-0">
+                                            <p>Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.</p>
+                                            <a data-toggle="collapse" id="btn2" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                Закрыть
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
-
                             </div>
                         </div>
-                        <div class="swiper-slide py-5">
-                            <div class="row d-flex justify-content-center align-items-center">
-                                <div class="col-md-6 project-background">
-                                    <img src="/img/1.jpg" alt="">
+                    </div>
+                    <div class="js-tab-content content" style="display: none;" data-tab-list="tabGroup1" data-tab-info="tab04">
+
+                        <div class="box">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6">
+                                    <div class="imageWrap"><img class="image" src="/img/1.jpg" alt="image alt"></div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="main-title text-left">
-                                        <h1>Jascongress univer...</h1>
-                                    </div>
-                                    <p>
+                                <div class="col-md-6 col-lg-6">
+                                    <h1><span class="main-color">ПРОЕКТ</span>  JasQalam</h1>
+                                    <p class="text">
                                         Ежегодный проект, который нацелен на развитие молодежной
                                         журналистики. 4 направления обучения: тележурналистика, печатная журналистика и интернет-блоггинг, PR и личный
                                     </p>
-                                    <a href="" class="links">Подробнее</a>
+                                    <a data-toggle="collapse" id="btn" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        Подробнее
+                                    </a>
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="card-body pt-0 pl-0">
+                                            <p>Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.</p>
+                                            <a data-toggle="collapse" id="btn2" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                Закрыть
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
-
                             </div>
                         </div>
-                        <div class="swiper-slide py-5">
-                            <div class="row d-flex justify-content-center align-items-center">
-                                <div class="col-md-6 project-background">
-                                    <img src="/img/1.jpg" alt="">
+                    </div>
+                    <div class="js-tab-content content" style="display: none;" data-tab-list="tabGroup1" data-tab-info="tab05">
+
+                        <div class="box">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6">
+                                    <div class="imageWrap"><img class="image" src="/img/1.jpg" alt="image alt"></div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="main-title text-left">
-                                        <h1>Дни КМК</h1>
-                                    </div>
-                                    <p>
+                                <div class="col-md-6 col-lg-6">
+                                    <h1><span class="main-color">ПРОЕКТ</span>  JasQalam</h1>
+                                    <p class="text">
                                         Ежегодный проект, который нацелен на развитие молодежной
                                         журналистики. 4 направления обучения: тележурналистика, печатная журналистика и интернет-блоггинг, PR и личный
                                     </p>
-                                    <a href="" class="links">Подробнее</a>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide py-5">
-                            <div class="row d-flex justify-content-center align-items-center">
-                                <div class="col-md-6 project-background">
-                                    <img src="/img/1.jpg" alt="">
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="main-title text-left">
-                                        <h1>Qazaqsha Tour 2020</h1>
+                                    <a data-toggle="collapse" id="btn" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        Подробнее
+                                    </a>
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="card-body pt-0 pl-0">
+                                            <p>Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.</p>
+                                            <a data-toggle="collapse" id="btn2" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                Закрыть
+                                            </a>
+                                        </div>
                                     </div>
-                                    <p>
-                                        Ежегодный проект, который нацелен на развитие молодежной
-                                        журналистики. 4 направления обучения: тележурналистика, печатная журналистика и интернет-блоггинг, PR и личный
-                                    </p>
-                                    <a href="" class="links">Подробнее</a>
                                 </div>
-
                             </div>
                         </div>
-                        <div class="swiper-slide py-5">
-                            <div class="row d-flex justify-content-center align-items-center">
-                                <div class="col-md-6 project-background">
-                                    <img src="/img/1.jpg" alt="">
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="main-title text-left">
-                                        <h1>ПРОЕКТ «Jas Qalam»6</h1>
-                                    </div>
-                                    <p>
-                                        Ежегодный проект, который нацелен на развитие молодежной
-                                        журналистики. 4 направления обучения: тележурналистика, печатная журналистика и интернет-блоггинг, PR и личный
-                                    </p>
-                                    <a href="" class="links">Подробнее</a>
-                                </div>
-
-                            </div>
-                        </div>
-
-
                     </div>
                 </div>
+
             </div>
+
         </div>
     </div>
     <!--Slider end-->
@@ -233,8 +252,8 @@
     <div id="join" class="blog content-area-2 my-bg-white">
         <div class="container">
             <div class="main-title">
-                <h1><span class="main-color">ВСТУПЛЕНИЕ</span> В КОНГРЕСС</h1>
-                <p>Отправляйте заявки</p>
+                <h1>{!! __('front.join_in_congress') !!}</h1>
+                <p>{{__('front.join_in_congress_content')}}</p>
             </div>
             <div class="row">
                 <div class="col-md-12 d-flex justify-content-center align-items-center">
@@ -250,7 +269,7 @@
     <div id="teams" class="blog content-area-2 bg-white">
         <div class="container">
             <div class="main-title">
-                <h1><span class="main-color">НАША</span> КОМАНДА</h1>
+                <h1>{!! __('front.our_team') !!}</h1>
             </div>
             <div class="slick-slider-area">
                 <div class="row slick-carousel wow fadeInUp delay-04s" data-slick='{"slidesToShow": 3,"dots":true, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}'>
@@ -273,8 +292,7 @@
     <div id="partners" class="blog content-area-2 my-bg-white">
         <div class="container">
             <div class="main-title">
-                <h1><span class="main-color">НАШИ</span> ПАРТНЕРЫ</h1>
-                <p>Отправляйте заявки</p>
+                <h1>{!! __('front.our_partn') !!}</h1>
             </div>
             <div class="row">
                 <div class="col-md-12">
@@ -332,12 +350,12 @@
                                 </div>
                                 <div class="detail">
                                     <h3>
-                                        <a href="blog-single-sidebar-right.html">{{$lang ? $post->title_kz : $post->title}}</a>
+                                        <a href="{{route('single', $post->id)}}">{{$lang ? $post->title_kz : $post->title}}</a>
                                     </h3>
                                     <p>{!! $lang ? \Illuminate\Support\Str::limit($post->content_kz, 100) : \Illuminate\Support\Str::limit($post->content, 100) !!}</p>
                                     <div class="blog-footer clearfix">
                                         <div class="float-left">
-                                            <p class="date"><i class="flaticon-calendar"></i> 17 Feb, 2020</p>
+                                            <p class="date"><i class="fa fa-calendar"></i>{{$post->created_at->format('d-m-y')}}</p>
                                         </div>
                                         <div class="float-right">
                                             <a href="{{route('single', $post->id)}}">Read more..</a>
@@ -353,74 +371,73 @@
     </div>
     <!-- Blog end -->
 
+
+    <!-- Modal -->
+    <div class="modal fade" id="association" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="main-title">
+                        <h1>Ассоциация</h1>
+                        <p>{{__('front.modal_content1')}}
+                            <br><span class="main-color">jascongress2002@gmail.com</span></p>
+                        <div class="my-2 pt-2">
+
+                            <a class="btn w-50 a-btn my-2 font-weight-bold">
+                                <span class="row">
+                                    <span class="col-4 d-flex justify-content-center align-items-center"><i class="fas fa-download main-color download-icon"></i></span>
+                                    <span class="col-8">
+                                        <div class="text-left">
+                                            {{__('front.download')}} <br>
+                                            <small>Заявление.doc</small>
+                                        </div>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+
+                        <p>*{{__('front.modal_content2')}}</p>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="team" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="main-title">
+                        <h1>Команда</h1>
+                        <p>
+                            {{__('front.modal_content3')}}
+                            <span class="main-color">jascongress2002@gmail.com</span>
+                        </p><br>
+                        <p>*{{__('front.modal_content4')}}</p>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 @endsection
 @push('scripts')
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            loop:false,
-            freeMode: false,
-            slideToClickedSlide:true,
-            simulateTouch:false,
-            allowTouchMove:false,
-
-            breakpoints: {
-                640: {
-                    slidesPerView: 1,
-                    spaceBetween: 5,
-                    pagination: {
-                        el: '.swiper-pagination',
-                        type: 'bullets',
-                    },
-                },
-                1024: {
-                    slidesPerView: 5,
-                    spaceBetween: 2,
-                    navigation: {
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev",
-                    },
-                },
-            }
-        });
-        var swiper_project = new Swiper(".mySwiperProject", {
-            spaceBetween: 10,
-            slidesPerView: 1,
-            freeMode: false,
-            simulateTouch:false,
-            allowTouchMove:false,
-        });
-
-        swiper.on("click",function (el) {
-
-            swiper.slideTo(el.clickedIndex,1200);
-            swiper_project.slideTo(el.realIndex,1200);
-        })
-        swiper.on('slideChange', function (el) {
-            swiper_project.slideTo(el.realIndex,1200);
-        });
-
-        var swiper_partner = new Swiper(".swiperPartner",{
-
-            freeMode: false,
-            slideToClickedSlide:true,
-            centerMode:true,
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 1,
-                },
-                1024: {
-                    slidesPerView: 4,
-                    spaceBetween: 2,
-                },
-            }
-        })
-
-
-    </script>
+    <script src="{{asset('js/jquery.lbslider.js')}}"></script>
+    <script src="{{asset('js/scripts.js')}}"></script>
 @endpush

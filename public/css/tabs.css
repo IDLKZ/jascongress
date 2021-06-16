@@ -1,0 +1,151 @@
+/* Tab Button */
+.tab {
+    width: 100%;
+}
+.tab__button {
+    height: 50px;
+    position: relative;
+}
+.tab__content {
+    margin-top: 70px;
+}
+.list {
+    display: flex;
+    list-style: none;
+    height: 100%;
+}
+.item {
+    width: 100%;
+    border: 0;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    height: 100%;
+}
+.button {
+    cursor: pointer;
+    appearance: none;
+    border-radius: 0;
+    border-style: none;
+    width: 100%;
+    height: 80px;
+    border-bottom: 2px solid transparent;
+    transition: all .25s ease-in-out;
+    font-size: 14px;
+    background-color: white;
+    color: rgba(172, 172, 172, 1);
+}
+.button i {
+    font-size: 18px;
+}
+
+.button:hover {
+    font-weight: bold;
+    border-bottom: 2px solid #31a0ca;
+}
+.button:focus {
+    outline: none;
+}
+.is-current .button {
+    color: #fff!important;
+    background: rgb(0, 154, 210);
+    height: 80px;
+}
+.is-current i {
+    color: white;
+}
+.is-current .button:hover {
+    border-bottom: 2px solid transparent;
+}
+
+/* Tab Content */
+.title {
+    font-size: 25px;
+    margin: 10px auto 20px;
+}
+
+.title:first-letter {
+    font-size: 40px;
+    color: #f00;
+}
+
+.box {
+    display: flex;
+}
+@media screen and (max-width:767px) {
+    .box {
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+
+.text {
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: left;
+    /*margin: 20px 0 20px 20px;*/
+}
+@media screen and (max-width:767px) {
+    .text {
+        width: 100%;
+        margin: 20px auto;
+    }
+}
+
+.imageWrap {
+    width: 80%;
+}
+@media screen and (max-width:767px) {
+    .imageWrap {
+        width: 100%;
+    }
+}
+
+.image {
+    width: 100%;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+}
+
+
+
+
+
+/*Slider*/
+.slider {
+    position: relative;
+    width: 650px;
+    margin: auto;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+    /*text-align: center;*/
+}
+ul li span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    background: black;
+}
+.slider-arrow {
+    position: absolute;
+    top: 20px;
+    width: 28px;
+    height: 28px;
+    /*background: black;*/
+    color: rgb(0, 154, 210);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+}
+.sa-left {
+    left: 170px;
+}
+.sa-right {
+    right: 170px;
+}

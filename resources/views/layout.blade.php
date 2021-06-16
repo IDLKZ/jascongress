@@ -46,7 +46,7 @@
                     {{--                    <li><a href="#" class="google"><i class="fa fa-google-plus"></i></a></li>--}}
                     {{--                    <li><a href="#" class="rss"><i class="fa fa-rss"></i></a></li>--}}
                     @if ($footer->instagram)
-                        <li><a href="#" class="linkedin"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="{{$footer->instagram}}" class="linkedin"><i class="fa fa-instagram"></i></a></li>
                     @endif
                 </ul>
             </div>
@@ -100,8 +100,12 @@
                                     {{__('front.our_contact')}}
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link btn btn-round bg-jk font-weight-bold" href="#">
+                            <li class="nav-item TIMA">
+                                <a class="btn btn-round bg-jk font-weight-bold glowing-btn play-btn" target="_blank" href="https://jitsi.idl.kz">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
                                     Проект Janaru
                                 </a>
                             </li>
@@ -179,7 +183,7 @@
             <div class="col-xl-4 col-lg-2 col-md-6 col-sm-6">
                 <div class="footer-item">
                     <h4>
-                        Ссылки
+                        {{__('front.links')}}
                     </h4>
                     <ul class="links">
                         <li>
@@ -219,10 +223,22 @@
                 </div>
                 <div class="col-lg-4 col-md-12">
                     <ul class="social-list clearfix">
-                        <li><a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#" class="twitter-bg"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#" class="google-bg"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#" class="linkedin-bg"><i class="fa fa-linkedin"></i></a></li>
+                        @if ($footer->facebook)
+                            <li><a href="{{$footer->facebook}}" class="facebook-bg"><i class="fa fa-facebook"></i></a></li>
+                        @endif
+                        @if ($footer->twitter)
+                            <li><a href="{{$footer->twitter}}" class="twitter-bg"><i class="fa fa-twitter"></i></a></li>
+                        @endif
+                        @if ($footer->instagram)
+                            <li><a href="{{$footer->instagram}}" class="instagram-bg"><i class="fa fa-instagram"></i></a></li>
+                        @endif
+                        @if ($footer->telegram)
+                            <li><a href="{{$footer->telegram}}" class="linkedin-bg"><i class="fa fa-telegram"></i></a></li>
+                        @endif
+                        @if ($footer->whatsapp)
+                            <li><a href="{{$footer->whatsapp}}" class="google-bg"><i class="fa fa-whatsapp"></i></a></li>
+                        @endif
+
                     </ul>
                 </div>
             </div>
@@ -230,56 +246,6 @@
     </div>
 </footer>
 <!-- Footer end -->
-<!-- Modal -->
-<div class="modal fade" id="association" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="main-title">
-                    <h1>Ассоциация</h1>
-                    <p>Подписанное заявление необходимо подписать и заверить печатью, отсканировать и отправить на электронный адрес jascongress2002@gmail.com</p>
-                    <div class="my-2 pt-2">
-
-                        <a class="btn-lg a-btn my-2 font-weight-bold">
-                            <i class="fas fa-download main-color"></i>
-                            Скачать
-                        </a>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="team" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="main-title">
-                    <h1>Команда</h1>
-                    <p>
-                        Высылать резюме на электронный адрес
-                        jascongress2002@gmail.com                    </p>
-
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 
 <!-- External JS libraries -->
 
