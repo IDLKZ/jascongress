@@ -27,7 +27,7 @@
     <!-- Email Field -->
     <div class="form-group col-sm-6">
         {!! Form::label('email', 'Email:') !!}
-        {!! Form::select('email', json_decode($setting->email, 1), null, ['class' => 'form-control select2',"multiple"=>"multiple","name"=>"email[]"]) !!}
+        {!! Form::select('email', $email, null, ['class' => 'form-control select2',"multiple"=>"multiple","name"=>"email[]"]) !!}
     </div>
 </div>
 

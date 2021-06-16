@@ -96,6 +96,9 @@ class SettingController extends AppBaseController
     public function edit($id)
     {
         $setting = $this->settingRepository->find($id);
+        foreach (json_decode($setting->email) as $k => $v) {
+            $email[$v] = $v;
+        }
 
         if (empty($setting)) {
             Flash::error('Setting not found');
@@ -103,7 +106,7 @@ class SettingController extends AppBaseController
             return redirect(route('settings.index'));
         }
 
-        return view('settings.edit')->with('setting', $setting);
+        return view('settings.edit', compact('setting', 'email'));
     }
 
     /**
@@ -123,8 +126,9 @@ class SettingController extends AppBaseController
 
             return redirect(route('settings.index'));
         }
-
-        $setting->edit($request->all());
+        $data = $request->all();
+        $data['email'] = json_encode($request['email'], 1);
+        $setting->edit($data);
         $setting->uploadImage($request['logo']);
 
         Flash::success('Setting updated successfully.');
