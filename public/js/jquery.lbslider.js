@@ -10,13 +10,13 @@
         }, options);
         var make = function() {
             $(this).css('overflow', 'hidden');
-            
+
             var thisWidth = $(this).width();
             var mod = thisWidth % options.visible;
             if (mod) {
                 $(this).width(thisWidth - mod); // to prevent bugs while scrolling to the end of slider
             }
-            
+
             var el = $(this).children('ul');
             el.css({
                 position: 'relative',
@@ -53,12 +53,33 @@
                 leftBtn.addClass('inactive');
                 rightBtn.addClass('inactive');
             }
+            function disableRightButton() {
+                if (el.css('left') == '-1134px'){rightBtn.css('color', '#bdbdbd')}
+                rightBtn.addClass('inactive');
+            }
+            function disableLeftButton() {
+                if (el.css('left') == '-648px'){leftBtn.css('color', '#bdbdbd')}
+                leftBtn.addClass('inactive');
+            }
+            function enableRightButton() {
+                rightBtn.removeClass('inactive');
+                rightBtn.css('color', '#009AD2 ')
+            }
+            function enableLeftButton() {
+                leftBtn.removeClass('inactive');
+                leftBtn.css('color', '#009AD2 ')
+            }
+            if (el.css('left') == '-1134px'){rightBtn.css('color', '#bdbdbd')}
+            if (el.css('left') == '-648px'){leftBtn.css('color', '#bdbdbd')}
+
             function enableButtons() {
                 leftBtn.removeClass('inactive');
                 rightBtn.removeClass('inactive');
             }
 
             leftBtn.click(function(event){
+                enableRightButton();
+                if (el.css('left') == '-648px'){disableLeftButton()}
                 event.preventDefault();
                 if (!$(this).hasClass('inactive')) {
                     disableButtons();
@@ -73,6 +94,8 @@
             });
 
             rightBtn.click(function(event){
+                enableLeftButton();
+                if (el.css('left') == '-1134px'){disableRightButton()}
                 event.preventDefault();
                 if (!$(this).hasClass('inactive')) {
                     disableButtons();
@@ -83,8 +106,10 @@
                         }
                     );
                 }
+
                 return false;
             });
+
 
             if (options.autoPlay) {
                 function aPlay() {

@@ -61,7 +61,7 @@ $('.slider').lbSlider({
     rightBtn: '.sa-right', // right button selector
     visible: 4, // visible elements quantity
     autoPlay: false, // autoscroll
-    autoPlayDelay: false // delay of autoscroll in seconds
+    autoPlayDelay: 2 // delay of autoscroll in seconds
 });
 
 $('#btn1_1').on('click', function () {

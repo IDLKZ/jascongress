@@ -262,7 +262,9 @@ body{
     width: 100%;
     height: 235px;
 }
-
+.inactive {
+    color: #BDBDBD;
+}
 
 /*MEDIA*/
 @media screen and (max-width: 768px) {

@@ -155,13 +155,13 @@
                                         <p class="text">
                                             Ежегодный проект, который нацелен на развитие молодежной журналистики. 4 направления обучения: тележурналистика, печатная журналистика и интернет-блоггинг, PR и личный бренд
                                         </p>
-                                    <a data-toggle="collapse" id="btn1_1" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    <a class="text" data-toggle="collapse" id="btn1_1" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                                         Подробнее
                                     </a>
                                         <div class="collapse" id="collapseExample">
                                             <div class="card-body pt-0 pl-0">
                                                 <p>В офлайн формате проект был реализован в 9 городах Казахстана с общим охватом более 2000 человек. В онлайн формате участие приняло около 1500 молодых людей со всех регионов Казахстана.</p>
-                                                <a data-toggle="collapse" id="btn1_2" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                <a class="text" data-toggle="collapse" id="btn1_2" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                                                     Закрыть
                                                 </a>
                                             </div>
@@ -205,7 +205,7 @@
                                     <p class="text">
                                         Реализован при поддержке Министерства информации и общественного развития Республики Казахстан и является продолжением Республиканского образовательного молодежного летнего лагеря «Зерен».
                                     </p>
-                                    <a data-toggle="collapse" id="btn2_1" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                                    <a class="text" data-toggle="collapse" id="btn2_1" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
                                         Подробнее
                                     </a>
                                     <div class="collapse" id="collapseExample2">
@@ -213,7 +213,7 @@
                                             <p>Цель проекта – всесторонняя консолидация молодежи в новых реалиях, создающих условия для саморазвития, реализация идеи «слышащего государства» через призму мнения молодого поколения, обсуждение проекта Комплексного плана по поддержке молодежи Республики Казахстан на 2021-2025 годы.
                                                 <br> В проекте приняло участие около 3000 молодых людей.
                                             </p>
-                                            <a data-toggle="collapse" id="btn2_2" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                                            <a class="text" data-toggle="collapse" id="btn2_2" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
                                                 Закрыть
                                             </a>
                                         </div>
@@ -245,13 +245,13 @@
                                     <p class="text">
                                         Целью проекта является развитие внутреннего туризма и интеграционных процессов среди молодежи для содействия установления контакта между регионами Казахстана.
                                     </p>
-                                    <a data-toggle="collapse" id="btn3_1" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    <a data-toggle="collapse" class='text' id="btn3_1" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
                                         Подробнее
                                     </a>
                                     <div class="collapse" id="collapseExample3">
                                         <div class="card-body pt-0 pl-0">
                                             <p>Участниками проекта стали 690 активных молодых людей, которые отправились в караван по сакральным и туристическим местам по 7 направлениям Казахстана (Акмолинская область, Карагандинская область, Туркестанская область/города Шымкент и Тараз, Алматинская область, Западно-Казахстанская область, Восточно-Казахстанская область, Павлодарская область).</p>
-                                            <a data-toggle="collapse" id="btn3_2" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+                                            <a data-toggle="collapse" class='text' id="btn3_2" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
                                                 Закрыть
                                             </a>
                                         </div>
@@ -291,13 +291,13 @@
                                     <p class="text">
                                         Проект нацелен на консолидацию молодежных неправительственных организаций в обсуждении, решении вопросов и проблем общества, инициатив и предложений молодежи.
                                     </p>
-                                    <a data-toggle="collapse" id="btn4_1" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+                                    <a data-toggle="collapse" class='text' id="btn4_1" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
                                         Подробнее
                                     </a>
                                     <div class="collapse" id="collapseExample4">
                                         <div class="card-body pt-0 pl-0">
                                             <p>Кроме того, Дни КМК является площадкой для сбора членов Ассоциации для обучения по PR, HR, проектному менеджменту, а также презентации деятельности Республиканских молодежных организаций.</p>
-                                            <a data-toggle="collapse" id="btn4_2" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+                                            <a data-toggle="collapse" class='text' id="btn4_2" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
                                                 Закрыть
                                             </a>
                                         </div>
@@ -326,7 +326,7 @@
                                                 <img src="{{asset('img/projects/Sinergy/2.jpg')}}" class="d-block w-75 m-auto" alt="...">
                                             </div>
                                             <div class="carousel-item">
-                                                <img src="{{asset('img/projects/Sinergy/2.jpg')}}" class="d-block w-75 m-auto" alt="...">
+                                                <img src="{{asset('img/projects/Sinergy/3.jpg')}}" class="d-block w-75 m-auto" alt="...">
                                             </div>
 
                                         </div>
@@ -337,7 +337,7 @@
                                     <p class="text">
                                         Проект направлен на развитие IT отрасли через обучение молодежи разных этнических групп в Казахстане по специальностям информационных технологий.
                                     </p>
-                                    <a data-toggle="collapse" id="btn5_1" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
+                                    <a data-toggle="collapse" class='text' id="btn5_1" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
                                         Подробнее
                                     </a>
                                     <div class="collapse" id="collapseExample5">
@@ -345,7 +345,7 @@
                                             <p>Более 300 человек прошли обучение по темам: веб дизайн, кибербезопасность, онлайн обслуживание, smart city, привлечение инвесторов и разработка сайта. Также в 16 регионах Казахстана прошли региональные аллеи, где было презентовано более 200 IT-проектов.
                                                 <br> На Республиканском форуме «Синергия молодежи АНК» были определены победители IT-проектов. Призовой фонд за І место составил 1 000 000 тенге, ІІ место 700 000 тенге, ІІІ место 500 000 тенге.
                                             </p>
-                                            <a data-toggle="collapse" id="btn5_2" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
+                                            <a data-toggle="collapse" class='text' id="btn5_2" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
                                                 Закрыть
                                             </a>
                                         </div>
@@ -367,7 +367,7 @@
                                         <div class="carousel-inner">
 
                                             <div class="carousel-item active">
-                                                <img src="{{asset('img/projects/Jcuniver/1.jpg')}}" class="d-block w-75 m-auto" alt="...">
+                                                <img src="{{asset('img/projects/Jcuniver/1.png')}}" class="d-block w-75 m-auto" alt="...">
                                             </div>
                                             <div class="carousel-item">
                                                 <img src="{{asset('img/projects/Jcuniver/2.jpeg')}}" class="d-block w-75 m-auto" alt="...">
@@ -381,13 +381,13 @@
                                     <p class="text">
                                         Образовательная онлайн-площадка, нацеленная на повышение квалификации работников молодежных НПО, волонтеров, активистов по приобретению новых лидерских и стратегических компетенций для создания молодежных экосистем.
                                     </p>
-                                    <a data-toggle="collapse" id="btn6_1" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample6">
+                                    <a data-toggle="collapse" class='text' id="btn6_1" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample6">
                                         Подробнее
                                     </a>
                                     <div class="collapse" id="collapseExample6">
                                         <div class="card-body pt-0 pl-0">
                                             <p>На сегодняшний день прошло 4 потока обучения с общим количеством выпускников – 500 человек. Заявки на обучение подали более 2 500 человек.</p>
-                                            <a data-toggle="collapse" id="btn6_2" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample6">
+                                            <a data-toggle="collapse" class='text' id="btn6_2" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample6">
                                                 Закрыть
                                             </a>
                                         </div>
@@ -427,13 +427,13 @@
                                     <p class="text">
                                         В марте 2020 года в городах Актау, Нур-Султан, Шымкент, Алматы, Тараз совместно с блогерами команды TJokers и казахстанским певцом Мирас Жугунусов и молодежной группой «Alzabi» была организована мотивационная площадка по развитию казахского контента в интернет-сети с концертной программой для молодежи.
                                     </p>
-                                    <a data-toggle="collapse" id="btn7_1" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample7">
+                                    <a data-toggle="collapse" class='text' id="btn7_1" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample7">
                                         Подробнее
                                     </a>
                                     <div class="collapse" id="collapseExample7">
                                         <div class="card-body pt-0 pl-0">
                                             <p>В каждом городе охват молодежи составил свыше 1500 человек, прямой охват по итогу проекта составил более 7500 человек.</p>
-                                            <a data-toggle="collapse" id="btn7_2" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample7">
+                                            <a data-toggle="collapse" class='text' id="btn7_2" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample7">
                                                 Закрыть
                                             </a>
                                         </div>
