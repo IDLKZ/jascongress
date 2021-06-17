@@ -211,8 +211,7 @@
                 <div class="footer-item clearfix">
                     <h4>Карта</h4>
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2503.8280814069894!2d71.42498976575614!3d51.130079079574806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0KDQtdGB0L_Rg9Cx0LvQuNC60LAg0JrQsNC30LDRhdGB0YLQsNC9LCAwMTAwMDAsINCzLiDQndGD0YAt0KHRg9C70YLQsNC9LCDRg9C7LiDQmtGD0L3QsNC10LLQsCwgMTIvMQ!5e0!3m2!1sru!2skz!4v1622720548836!5m2!1sru!2skz" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2503.7186786617185!2d71.41090151514743!3d51.13209694589584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245869ead690463%3A0xf7a9a693fa3800c5!2z0L_RgNC-0YHQvy4g0JrQsNCx0LDQvdCx0LDQuSDQkdCw0YLRi9GA0LAgMTksINCd0YPRgC3QodGD0LvRgtCw0L0gMDIwMDAw!5e0!3m2!1sru!2skz!4v1623915880459!5m2!1sru!2skz" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>            </div>
         </div>
     </div>
     <div class="sub-footer">
