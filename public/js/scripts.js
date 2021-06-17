@@ -64,12 +64,68 @@ $('.slider').lbSlider({
     autoPlayDelay: false // delay of autoscroll in seconds
 });
 
-$('#btn').on('click', function () {
-    var btn = $('#btn')
+$('#btn1_1').on('click', function () {
+    var btn = $('#btn1_1')
     btn.css('display', 'none');
 })
 
-$('#btn2').on('click', function (){
-    var btn = $('#btn')
+$('#btn1_2').on('click', function (){
+    var btn = $('#btn1_1')
+    btn.css('display', 'block')
+})
+
+$('#btn2_1').on('click', function () {
+    var btn = $('#btn2_1')
+    btn.css('display', 'none');
+})
+
+$('#btn2_2').on('click', function (){
+    var btn = $('#btn2_1')
+    btn.css('display', 'block')
+})
+
+$('#btn3_1').on('click', function () {
+    var btn = $('#btn3_1')
+    btn.css('display', 'none');
+})
+
+$('#btn3_2').on('click', function (){
+    var btn = $('#btn3_1')
+    btn.css('display', 'block')
+})
+$('#btn4_1').on('click', function () {
+    var btn = $('#btn4_1')
+    btn.css('display', 'none');
+})
+
+$('#btn4_2').on('click', function (){
+    var btn = $('#btn4_1')
+    btn.css('display', 'block')
+})
+$('#btn5_1').on('click', function () {
+    var btn = $('#btn5_1')
+    btn.css('display', 'none');
+})
+
+$('#btn5_2').on('click', function (){
+    var btn = $('#btn5_1')
+    btn.css('display', 'block')
+})
+$('#btn6_1').on('click', function () {
+    var btn = $('#btn6_1')
+    btn.css('display', 'none');
+})
+
+$('#btn6_2').on('click', function (){
+    var btn = $('#btn6_1')
+    btn.css('display', 'block')
+})
+$('#btn7_1').on('click', function () {
+    var btn = $('#btn7_1')
+    btn.css('display', 'none');
+})
+
+$('#btn7_2').on('click', function (){
+    var btn = $('#btn7_1')
     btn.css('display', 'block')
 })

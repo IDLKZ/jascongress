@@ -4,7 +4,7 @@ html {
 
 body{
     background: #F6F9FD!important;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif!important;
 }
 
 .main-img {
@@ -257,6 +257,11 @@ body{
 
 /*Glowing*/
 
+
+.carousel-inner img {
+    width: 100%;
+    height: 235px;
+}
 
 
 /*MEDIA*/
