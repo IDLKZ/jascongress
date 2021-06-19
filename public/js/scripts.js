@@ -55,14 +55,28 @@ $(function() {
     });
 
 });
+var mql = window.matchMedia('all and (max-width: 479px)');
+if (mql.matches) {
+    // размер окна 479px или меньше
+    $('.slider').lbSlider({
+        leftBtn: '.sa-left', // left button selector
+        rightBtn: '.sa-right', // right button selector
+        visible: 1, // visible elements quantity
+        autoPlay: false, // autoscroll
+        autoPlayDelay: 2 // delay of autoscroll in seconds
+    });
+} else {
 
-$('.slider').lbSlider({
-    leftBtn: '.sa-left', // left button selector
-    rightBtn: '.sa-right', // right button selector
-    visible: 4, // visible elements quantity
-    autoPlay: false, // autoscroll
-    autoPlayDelay: 2 // delay of autoscroll in seconds
-});
+    $('.slider').lbSlider({
+        leftBtn: '.sa-left', // left button selector
+        rightBtn: '.sa-right', // right button selector
+        visible: 4, // visible elements quantity
+        autoPlay: false, // autoscroll
+        autoPlayDelay: 2 // delay of autoscroll in seconds
+    });
+    // нет, размер окна более 479px
+}
+
 
 $('#btn1_1').on('click', function () {
     var btn = $('#btn1_1')

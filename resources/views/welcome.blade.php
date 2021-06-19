@@ -625,7 +625,21 @@
                         <p>
                             {{__('front.modal_content3')}}
                             <span class="main-color">jascongress2002@gmail.com</span>
-                        </p><br>
+                        </p>
+                        <div class="my-2 pt-2">
+
+                            <a class="btn w-50 a-btn my-2 font-weight-bold" href="{{asset('resume.docx')}}" download>
+                                    <span class="row">
+                                        <span class="col-4 d-flex justify-content-center align-items-center"><i class="fas fa-download main-color download-icon"></i></span>
+                                        <span class="col-8">
+                                            <div class="text-left">
+                                                {{__('front.download')}} <br>
+                                                <small>Резюме.doc</small>
+                                            </div>
+                                        </span>
+                                    </span>
+                            </a>
+                        </div>
                         <p>*{{__('front.modal_content4')}}</p>
 
 

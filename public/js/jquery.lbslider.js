@@ -13,6 +13,7 @@
 
             var thisWidth = $(this).width();
             var mod = thisWidth % options.visible;
+
             if (mod) {
                 $(this).width(thisWidth - mod); // to prevent bugs while scrolling to the end of slider
             }
