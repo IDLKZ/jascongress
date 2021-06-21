@@ -101,7 +101,7 @@
                                 </a>
                             </li>
                             <li class="nav-item TIMA">
-                                <a class="btn btn-round bg-jk font-weight-bold glowing-btn play-btn" target="_blank" href="https://jitsi.idl.kz">
+                                <a class="btn btn-round bg-jk font-weight-bold glowing-btn play-btn" target="_blank" href="https://janaru.jascongress.kz">
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -249,6 +249,15 @@
 <!-- External JS libraries -->
 
 <script src="{{asset('js/app.js')}}"></script>
+<script>
+    $('.navbar-nav>li>a').on('click', function(){
+        $('.navbar-collapse').collapse('hide');
+    });
+
+    $(window).scroll(function (){
+        $('.navbar-collapse').collapse('hide');
+    })
+</script>
 @stack('scripts')
 
 </body>
