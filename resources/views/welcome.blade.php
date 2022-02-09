@@ -70,7 +70,7 @@
                                 <button class="button" type="button">
                                     <i class="fa fa-trophy"></i>
                                     <div>
-                                        Jascongress univercity
+                                        Jastar Keryeni
                                     </div>
                                 </button>
                             </li>
@@ -539,8 +539,8 @@
                     @foreach($posts as $post)
                         <div class="slick-slide-item">
                             <div class="blog-1">
-                                <div class="blog-photo">
-                                    <img src="{{$post->getImage()}}" alt="blog-1" class="img-fluid">
+                                <div class="blog-photo" style='width: 100%;height: 250px;background: url("{{$post->getImage()}}") no-repeat center;background-size: cover'>
+{{--                                    <img src="{{$post->getImage()}}" alt="blog-1" class="img-fluid">--}}
                                     <div class="user">
                                         {{--                                <div class="avatar">--}}
                                         {{--                                    <img src="http://placehold.it/30x30" alt="avatar" class="img-fluid rounded-circle">--}}
@@ -552,7 +552,7 @@
                                 </div>
                                 <div class="detail">
                                     <h3>
-                                        <a href="{{route('single', $post->id)}}">{{$lang ? $post->title_kz : $post->title}}</a>
+                                        <a href="{{route('single', $post->id)}}">{{$lang ? \Illuminate\Support\Str::limit($post->title_kz, 20) : \Illuminate\Support\Str::limit($post->title, 20)}}</a>
                                     </h3>
                                     <p>{!! $lang ? \Illuminate\Support\Str::limit($post->content_kz, 100) : \Illuminate\Support\Str::limit($post->content, 100) !!}</p>
                                     <div class="blog-footer clearfix">
