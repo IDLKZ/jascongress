@@ -22,6 +22,7 @@ Route::group(
     ], function(){
 
     Route::get('/', [FrontController::class, 'index'])->name('main');
+    Route::get('/news', [FrontController::class, 'news'])->name('news');
     Route::get('/single-post/{id}', [FrontController::class, 'single'])->name('single');
 
 });

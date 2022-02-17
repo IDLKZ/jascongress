@@ -265,7 +265,7 @@ body{
 .inactive {
     color: #BDBDBD;
 }
-
+.swiper-wrapper{overflow: hidden}
 /*MEDIA*/
 @media screen and (max-width: 768px) {
     .bg-image{

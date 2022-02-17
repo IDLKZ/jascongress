@@ -20,6 +20,13 @@ class FrontController extends Controller
         return view('welcome', compact('teams', 'posts', 'banner', 'lang'));
     }
 
+    public function news()
+    {
+        $posts = Blog::paginate(9);
+        $lang = Language::getLg();
+        return view('news', compact('posts', 'lang'));
+    }
+
     public function single($id)
     {
         $post = Blog::find($id);

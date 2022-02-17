@@ -91,10 +91,15 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link font-weight-bold" href="{{route('main')}}#blog">
+                                <a class="nav-link font-weight-bold" href="{{route('news')}}">
                                     {{__('front.our_news')}}
                                 </a>
                             </li>
+{{--                            <li class="nav-item">--}}
+{{--                                <a class="nav-link font-weight-bold" href="{{route('main')}}#blog">--}}
+{{--                                    {{__('front.our_news')}}--}}
+{{--                                </a>--}}
+{{--                            </li>--}}
                             <li class="nav-item">
                                 <a class="nav-link font-weight-bold" href="{{route('main')}}#contact">
                                     {{__('front.our_contact')}}
