@@ -535,7 +535,18 @@
                 <h1>{{__('front.our_news')}}</h1>
             </div>
             <div class="slick-slider-area">
-                <div class="row slick-carousel wow fadeInUp delay-04s" data-slick='{"slidesToShow": 3,"dots":true, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}'>
+                <div class="row slick-carousel wow fadeInUp delay-04s" data-slick='{
+                    "slidesToShow": 3,
+                    "infinite": true,
+                    "dots":false,
+                    "autoplay":true,
+                    "autoplaySpeed":2000,
+                    "initialSlide":1,
+                    "responsive":[{
+                        "breakpoint": 1024,
+                        "settings":
+                            {"slidesToShow": 2}},
+                            {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}'>
                     @foreach($posts as $post)
                         <div class="slick-slide-item">
                             <div class="blog-1">
@@ -554,7 +565,7 @@
                                     <h3>
                                         <a href="{{route('single', $post->id)}}">{{$lang ? \Illuminate\Support\Str::limit($post->title_kz, 20) : \Illuminate\Support\Str::limit($post->title, 20)}}</a>
                                     </h3>
-                                    <p>{!! $lang ? \Illuminate\Support\Str::limit($post->content_kz, 100) : \Illuminate\Support\Str::limit($post->content, 100) !!}</p>
+                                    <p>{!! $lang ? \Illuminate\Support\Str::limit($post->content_kz, 75) : \Illuminate\Support\Str::limit($post->content, 75) !!}</p>
                                     <div class="blog-footer clearfix">
                                         <div class="float-left">
                                             <p class="date"><i class="fa fa-calendar"></i>{{$post->created_at->format('d-m-y')}}</p>

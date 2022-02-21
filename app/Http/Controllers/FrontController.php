@@ -17,12 +17,14 @@ class FrontController extends Controller
         $posts = Blog::latest()->take(6)->get();
         $banner = Banner::latest()->first();
         $lang = Language::getLg();
+//        $posts = $posts->reverse();
+//        dd($posts);
         return view('welcome', compact('teams', 'posts', 'banner', 'lang'));
     }
 
     public function news()
     {
-        $posts = Blog::paginate(9);
+        $posts = Blog::orderBy('created_at', 'desc')->paginate(9);
         $lang = Language::getLg();
         return view('news', compact('posts', 'lang'));
     }
